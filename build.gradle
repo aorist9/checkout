@@ -6,7 +6,19 @@ buildscript {
     }
 }
 
+plugins {
+    id "application"
+}
+
 apply plugin: 'java'
+
+ext {
+    javaMainClass = "checkout.CheckoutApplication"
+}
+
+application {
+    mainClassName = javaMainClass
+}
 
 jar {
     baseName = 'Checkout.jar'
