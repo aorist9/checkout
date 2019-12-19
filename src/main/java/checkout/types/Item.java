@@ -17,6 +17,7 @@ public abstract class Item {
 
    static {
       itemMap.put("APPLE", () -> new Apple());
+      itemMap.put("ORANGE", () -> new Orange());
    }
 
    /**
