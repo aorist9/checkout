@@ -18,3 +18,5 @@ candidates take a list of strings as input
 * run `./gradlew build`
 * then run `./gradlew run --args="(your arguments separated by spaces)"`
 
+e.g. `./gradlew run --args="Apple Apple Orange Apple"` which should print `Your total is £2.05`
+
