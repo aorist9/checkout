@@ -9,8 +9,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: build and run the script
-      run: 
-      - ./gradlew build
-      - ./gradlew run --args="Apple Apple Orange Apple Apple Orange Orange Orange"
-      - ./gradlew run --args="Orange Orange Orange Apple"
+    - name: build the code
+      run: ./gradlew build
+    - name: test run
+      run: ./gradlew run --args="Apple Apple Orange Apple Apple Orange Orange Orange"
+    - name: smaller test run
+      run: ./gradlew run --args="Orange Orange Orange Apple"
