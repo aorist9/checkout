@@ -24,5 +24,4 @@ Step 2: Simple offers
 * run `./gradlew build`
 * then run `./gradlew run --args="(your arguments separated by spaces)"`
 
-e.g. `./gradlew run --args="Apple Apple Orange Apple"` which should print `Your total is £2.05`
-
+e.g. `./gradlew run --args="Apple Apple Orange Apple"` which should print `Your total is £2.05`.  The github action run on push runs a couple of example scripts
