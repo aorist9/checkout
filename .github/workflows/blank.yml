@@ -9,5 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
+    - name: build and run the script
       run: ./gradlew build
+      run: ./gradlew run --args="Apple Apple Orange Apple Apple Orange Orange Orange"
+      run: ./gradlew run --args="Orange Orange Orange Apple"
